@@ -11,254 +11,304 @@
 
    
 
-  <title>Chatbot Setup Page</title> 
+  <title>ChatList</title> 
   <link href="./main.97292821.css" rel="stylesheet"></head>
  
 
 <body>
-	<div class="container">
-	  <div class="notification-container">
-	  <!--     Notification list header -->
-	    <div class="notification-list-header table-content">
-	      <div class="arrow-icon table-content-cell">
-	        <i class="fa fa-angle-left icon"></i>
-	      </div>
-	      <div class="notification-title table-content-cell"> Notifications </div>
-	        <div class="search-form table-content-cell">
-	            <form action="" autocomplete="on">
-	              <input class="search-field" name="search" type="text" placeholder="Search...">
-	               <i id="js-show-search-form" class="fa fa-search icon"></i>
-	            </form>
-	      </div>
-	    </div>
-	  <!--     Notification Options -->
-	    <div class="notification-option table-content">
-	      <div class="table-content-cell"> 3 messages unsubscribed from bots </div>
-	      <div class="table-content-cell text-right">
-	        <i class="fa fa-trash icon remove-icon"></i>
-	        <i class="fa fa-check icon check-icon"></i>
-	      </div>
-	    </div>
-	    <div class="dropdown">
-	      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	        Subscribe to:
-	      </button>
-	      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-	        <a class="dropdown-item" href="#">Bot Action</a>
-	        <a class="dropdown-item" href="#">Another bot action</a>
-	        <a class="dropdown-item" href="#">Human chat</a>
-	      </div>
-	    </div>
-	<!--     Notification list container/box -->
-	    <div class="notification-list-box">
-	      <div class="custom-scrollBar">
-	        <div class="list-group">
-	          <div class="custom-control custom-checkbox">
-	            <input type="checkbox" class="custom-control-input" id="customCheck1">
-	            <label class="custom-control-label" for="customCheck1">
-			          <a href="#" class="list-group-item table-content">
-			            <div class="media table-content-cell">
-			                <div class="media-left">
-			                    <img class="media-object img-circle" src="http://www.simsglobe.com/img/1ygKgisU.png">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading"> Mr. Pakabu sent you a message</h4>
-			                  <span class="notification-location"> Continue your design </span>
-			                </div>
-			              </div>
-			            <div class="notification-time table-content-cell"> 3 min ago </div>
-			            <div class="list-remove-btn table-content-cell" > Delete </div>
-			          </a>
-			        </label>
-			      </div>
-	        	<div class="custom-control custom-checkbox">
-	        	  <input type="checkbox" class="custom-control-input" id="customCheck1">
-	        	  <label class="custom-control-label" for="customCheck1">
-			          <a href="#" class="list-group-item table-content">
-			            <div class="media table-content-cell">
-			                <div class="media-left">
-			                    <img class="media-object img-circle" src="https://avatars2.githubusercontent.com/u/1048619?v=4&s=96">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading">SK Das sent you a message</h4>
-			                  <span class="notification-location"> Please complete your task this week </span>
-			                </div>
-			              </div>
-			            <div class="notification-time table-content-cell"> 3 min ago </div>
-			            <div class="list-remove-btn table-content-cell" > Delete </div>
-			          </a>
-			        </label>
-			      </div>
-	        	<div class="custom-control custom-checkbox">
-	        	  <input type="checkbox" class="custom-control-input" id="customCheck1">
-	        	  <label class="custom-control-label" for="customCheck1">
-			          <a href="#" class="list-group-item table-content">
-			            <div class="media table-content-cell">
-			                <div class="media-left">
-			                    <img class="media-object img-circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/96579/profile/profile-80.jpg?1">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading">Masum Billah sent you message</h4>
-			                  <span class="notification-location"> 5527 Feneey Stavenu </span>
-			                </div>
-			              </div>
-			            <div class="notification-time table-content-cell"> 3 min ago </div>
-			            <div class="list-remove-btn table-content-cell" > Delete </div>
-			          </a>
-			        </label>
-			      </div>
-	        	
-	        	<div class="custom-control custom-checkbox">
-	        	  <input type="checkbox" class="custom-control-input" id="customCheck1">
-	        	  <label class="custom-control-label" for="customCheck1">
-			          <a href="#" class="list-group-item table-content unread">
-			            <div class="media table-content-cell">
-			                <div class="media-left">
-			                    <img class="media-object img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2D31L3t2Xfot6cyIO07necn3eIBBsZxiRuLSczOSuTH6D79dq">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading">Mr. Denboy like your post</h4>
-			                  <span class="notification-location"> 5527 Feneey Stavenu </span>
-			                </div>
-			              </div>
-			            <div class="notification-time table-content-cell"> 3 min ago </div>
-			            <div class="list-remove-btn table-content-cell" > Delete </div>
-			          </a>
-			        </label>
-			      </div>
-	        	
-	        	<div class="custom-control custom-checkbox">
-	        	  <input type="checkbox" class="custom-control-input" id="customCheck1">
-	        	  <label class="custom-control-label" for="customCheck1">
-			          <a href="#" class="list-group-item table-content unread">
-			            <div class="media table-content-cell">
-			                <div class="media-left">
-			                    <img class="media-object img-circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/96579/profile/profile-80.jpg?1">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading">Masum Billah sent you a message</h4>
-			                  <span class="notification-location"> 5527 Feneey Stavenu </span>
-			                </div>
-			              </div>
-			            <div class="notification-time table-content-cell"> 3 min ago </div>
-			            <div class="list-remove-btn table-content-cell" > Delete </div>
-			          </a>
-			        </label>
-			      </div>
-	        
-	        <div class="custom-control custom-checkbox">
-	          <input type="checkbox" class="custom-control-input" id="customCheck1">
-	          <label class="custom-control-label" for="customCheck1">
-			        <a href="#" class="list-group-item table-content">
-			            <div class="media table-content-cell">
-			                <div class="media-left">
-			                    <span class="media-object text-media-object"> D </span>
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading"> Your post deleted </h4>
-			                  <span class="notification-location"> 5527 Feneey Stavenu </span>
-			                </div>
-			              </div>
-			            <div class="notification-time table-content-cell"> 45 min ago </div>
-			            <div class="list-remove-btn table-content-cell" > Delete </div>
-			          </a>
-			        </label>
-			      </div>
-	        	
-	        	<div class="custom-control custom-checkbox">
-	        	  <input type="checkbox" class="custom-control-input" id="customCheck1">
-	        	  <label class="custom-control-label" for="customCheck1">
-			          <a href="#" class="list-group-item table-content unread">
-			            <div class="media table-content-cell">
-			                <div class="media-left">
-			                    <img class="media-object img-circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/96579/profile/profile-80.jpg?1">
-			                </div>
-			                <div class="media-body">
-			                  <h4 class="media-heading">Masum Billah sent you message</h4>
-			                  <span class="notification-location"> 5527 Feneey Stavenu </span>
-			                </div>
-			              </div>
-			            <div class="notification-time table-content-cell"> 3 min ago </div>
-			            <div class="list-remove-btn table-content-cell" > Delete </div>
-			          </a>
-			        </label>
-			      </div>
-	       </div>
-	    </div>
-	    </div>
-	  </div>
-	</div>
-	
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script>
-	document.addEventListener("DOMContentLoaded", function (event) {
-	    
-	  googleMapInit(); 
-	  scrollToAnchor();
-	  scrollRevelation('reveal');
-	});
-	</script>
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h4 class="text-white">$Facebook Username</h4>
+        <span class="text-muted">Chatbot templates setup.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
 
-	<footer class="footer-container white-text-container">
-	    <div class="container">
-	        <div class="row">
-	                <div class="col-md-4">
-	                    <h4>About us</h4>
-	                    <p>Brought to you by Banji Olusegun Kolawole. A student of Obafemi Awolowo University, Department of Computer Science and Engineering.</p>
-	                </div>
+  <div class="container">
+    <div class="container">
+    <!--     Notification list header -->
+      <div class="notification-list-header table-content">
+        <div class="arrow-icon table-content-cell">
+          <i class="fa fa-angle-left icon"></i>
+        </div>
+        <div class="notification-title table-content-cell"> Notifications </div>
+          <div class="search-form table-content-cell">
+              <form action="" autocomplete="on">
+                <input class="search-field" name="search" type="text" placeholder="Search...">
+                 <i id="js-show-search-form" class="fa fa-search icon"></i>
+              </form>
+        </div>
+      </div>
+    <!--     Notification Options -->
+      <div class="notification-option table-content">
+        <div class="table-content-cell"> 3 messages unsubscribed from bots </div>
+      </div>
+    </div>
 
-	                <div class="col-md-4">
-	                    <h4>Do you like ? Share this !</h4>
-	                    <div>
-	                        <p>
-	                            <a href="https://www.twitter.com" class="fa-icon" title="">
-	                        <i class="fa fa-twitter" aria-hidden="true"></i>
-	                        </a>
-	                            <a href="https://www.facebook.com" class="fa-icon" title="">
-	                                <i class="fa fa-facebook" aria-hidden="true"></i>
-	                            </a>
-	                            <a href="https://www.linkedin.com" class="fa-icon" title="">
-	                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-	                            </a>
-	                        </p>
-	                    </div>
-	                    <div>
-	                        <p><small>© Untitled | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></small></p>
-	                    </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Subscribe to:
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Bot Action</a>
+      <a class="dropdown-item" href="#">Another bot action</a>
+      <a class="dropdown-item" href="#">Human chat</a>
+    </div>
+  </div>
 
-	                </div>
+<!--     Notification list header -->
 
-	                <div class="col-md-4">
-	                        
-	                    <h4>Subscribe to newsletter</h4>
-	                    
-	                    <div class="form-group">
-	                        <div class="input-group">
-	                            <input type="text" class="form-control footer-input-text">
-	                            <div class="input-group-btn">
-	                                <button type="button" class="btn btn-default btn-newsletter ">OK</button>
-	                            </div>
-	                        </div>
-	                        
-	                        
-	                    </div>
-	                </div>
-	        </div>
-	    </div>
-	</footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Select</th>
+              <th scope="col">Customer Name</th>
+              <th scope="col">Social Media</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                    <label class="custom-control-label" for="customCheck1">1</label>
+                </div>
+              </td>
+              <td><a href="#" class="list-group-item table-content">
+                <div class="media table-content-cell">
+                    <div class="media-left">
+                        <img class="media-object img-circle" src="http://www.simsglobe.com/img/1ygKgisU.png">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"> Mr. Pakabu sent you a message</h4>
+                      <span class="notification-location"> Continue your design </span>
+                    </div>
+                  </div>
+                <div class="notification-time table-content-cell"> 3 min ago </div>
+                <div class="list-remove-btn table-content-cell" > Delete </div>
+              </a>
+              </td>
+              <td>Telegram</td>
 
-	<script>
-	document.addEventListener("DOMContentLoaded", function (event) {
-	  navbarToggleSidebar();
-	});
-	</script>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">2</label>
+                </div>
+              </td>
+              <td><a href="#" class="list-group-item table-content">
+                <div class="media table-content-cell">
+                    <div class="media-left">
+                        <img class="media-object img-circle" src="https://avatars2.githubusercontent.com/u/1048619?v=4&s=96">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">SK Das sent you a message</h4>
+                      <span class="notification-location"> Please complete your task this week </span>
+                    </div>
+                  </div>
+                <div class="notification-time table-content-cell"> 3 min ago </div>
+                <div class="list-remove-btn table-content-cell" > Delete </div>
+              </a></td>
+              <td>Facebook</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                    <label class="custom-control-label" for="customCheck3">3</label>
+                </div>
+              </td>
+              <td><a href="#" class="list-group-item table-content">
+                <div class="media table-content-cell">
+                    <div class="media-left">
+                        <img class="media-object img-circle" src="https://avatars2.githubusercontent.com/u/1048619?v=4&s=96">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">SK Das sent you a message</h4>
+                      <span class="notification-location"> Please complete your task this week </span>
+                    </div>
+                  </div>
+                <div class="notification-time table-content-cell"> 3 min ago </div>
+                <div class="list-remove-btn table-content-cell" > Delete </div>
+              </a></td>
+              <td>Facebook</td>
+
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">2</label>
+                </div>
+              </td>
+              <td><a href="#" class="list-group-item table-content">
+                <div class="media table-content-cell">
+                    <div class="media-left">
+                        <img class="media-object img-circle" src="https://avatars2.githubusercontent.com/u/1048619?v=4&s=96">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">SK Das sent you a message</h4>
+                      <span class="notification-location"> Please complete your task this week </span>
+                    </div>
+                  </div>
+                <div class="notification-time table-content-cell"> 3 min ago </div>
+                <div class="list-remove-btn table-content-cell" > Delete </div>
+              </a></td>
+              <td>Facebook</td>
+            </tr>
+  <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">2</label>
+                </div>
+              </td>
+              <td><a href="#" class="list-group-item table-content unread">
+                <div class="media table-content-cell">
+                    <div class="media-left">
+                        <img class="media-object img-circle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/96579/profile/profile-80.jpg?1">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Masum Billah sent you a message</h4>
+                      <span class="notification-location"> 5527 Feneey Stavenu </span>
+                    </div>
+                  </div>
+                <div class="notification-time table-content-cell"> 3 min ago </div>
+                <div class="list-remove-btn table-content-cell" > Delete </div>
+              </a></td>
+              <td>Facebook</td>
+            </tr>
+  <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">2</label>
+                </div>
+              </td>
+              <td><a href="#" class="list-group-item table-content">
+                <div class="media table-content-cell">
+                    <div class="media-left">
+                        <span class="media-object text-media-object"> D </span>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"> Your post deleted </h4>
+                      <span class="notification-location"> 5527 Feneey Stavenu </span>
+                    </div>
+                  </div>
+                <div class="notification-time table-content-cell"> 45 min ago </div>
+                <div class="list-remove-btn table-content-cell" > Delete </div>
+              </a></td>
+              <td>Facebook</td>
+            </tr>
+  <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">2</label>
+                </div>
+              </td>
+              <td><a href="#" class="list-group-item table-content">
+                <div class="media table-content-cell">
+                    <div class="media-left">
+                        <span class="media-object text-media-object"> D </span>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"> Your post deleted </h4>
+                      <span class="notification-location"> 5527 Feneey Stavenu </span>
+                    </div>
+                  </div>
+                <div class="notification-time table-content-cell"> 45 min ago </div>
+                <div class="list-remove-btn table-content-cell" > Delete </div>
+              </a></td>
+              <td>Facebook</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+      
+    googleMapInit(); 
+    scrollToAnchor();
+    scrollRevelation('reveal');
+  });
+  </script>
+
+  <footer class="footer-container white-text-container">
+      <div class="container">
+          <div class="row">
+                  <div class="col-md-4">
+                      <h4>About us</h4>
+                      <p>Brought to you by Banji Olusegun Kolawole. A student of Obafemi Awolowo University, Department of Computer Science and Engineering.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                      <h4>Do you like ? Share this !</h4>
+                      <div>
+                          <p>
+                              <a href="https://www.twitter.com" class="fa-icon" title="">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                              <a href="https://www.facebook.com" class="fa-icon" title="">
+                                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                              <a href="https://www.linkedin.com" class="fa-icon" title="">
+                                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                              </a>
+                          </p>
+                      </div>
+                      <div>
+                          <p><small>© Untitled | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></small></p>
+                      </div>
+
+                  </div>
+
+                  <div class="col-md-4">
+                          
+                      <h4>Subscribe to newsletter</h4>
+                      
+                      <div class="form-group">
+                          <div class="input-group">
+                              <input type="text" class="form-control footer-input-text">
+                              <div class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-newsletter ">OK</button>
+                              </div>
+                          </div>
+                          
+                          
+                      </div>
+                  </div>
+          </div>
+      </div>
+  </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navbarToggleSidebar();
+  });
+  </script>
 
 
-	<script type="text/javascript" src="./main.faaf51f9.js"></script>
+  <script type="text/javascript" src="./main.faaf51f9.js"></script>
 </body>
 
 </html>
