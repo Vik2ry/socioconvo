@@ -3,6 +3,9 @@ import requests
 
 from pymessenger import Bot
 
+import os 
+from flask import send_from_directory     
+
 app =  Flask(__name__)
 
 # FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages'
@@ -50,6 +53,10 @@ def webhook():
 	else:
 		# print(request.data)
 		return "200"
+
+@app.route('/favicon.ico') 
+def favicon(): 
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='assets/images/vnd.microsoft.icon')
 	
 if __name__ == '__main__':
 	app.run()
